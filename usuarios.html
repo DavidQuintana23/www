@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Usuarios</title>
+    <!-- Estilos comunes del dashboard -->
+    <link rel="stylesheet" href="/css/dashboard.css"> 
+    <!-- Estilos específicos para la página de usuarios -->
+    <link rel="stylesheet" href="/css/usuarios.css">
+</head>
+<body>
+
+<!-- Barra lateral -->
+<div class="sidebar">
+    <div class="logo">
+        <img src="img/Logo2.png" alt="Logo" class="logo-img"> <!-- Logo -->
+    </div>
+    <ul class="sidebar-menu">
+        <li><a href="dashboard.html" class="sidebar-btn">Dashboard</a></li>
+        <li><a href="usuarios.html" class="sidebar-btn">Usuarios</a></li>
+        <li><button class="sidebar-btn">Botón 3</button></li>
+        <li><button class="sidebar-btn">Botón 4</button></li>
+        <li><button class="sidebar-btn">Botón 5</button></li>
+        <li><button class="sidebar-btn">Botón 6</button></li>
+        <li><button class="sidebar-btn">Botón 7</button></li>
+        <li><button class="sidebar-btn">Botón 8</button></li>
+    </ul>
+    <button class="logout-btn" onclick="logout()">Cerrar sesión</button>
+</div>
+
+<!-- Contenido principal -->
+<div class="main-content">
+    <header>
+        <h1>Gestión de Usuarios</h1>
+    </header>
+    <main>
+        <!-- Tabla de usuarios -->
+        <div class="user-management">
+            <button class="add-user-btn">Añadir Usuario</button>
+            <table class="user-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Email</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Juan Pérez</td>
+                        <td>juan@example.com</td>
+                        <td>
+                            <button class="edit-btn">Editar</button>
+                            <button class="delete-btn">Eliminar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Ana García</td>
+                        <td>ana@example.com</td>
+                        <td>
+                            <button class="edit-btn">Editar</button>
+                            <button class="delete-btn">Eliminar</button>
+                        </td>
+                    </tr>
+                    <!-- Agregar más filas según sea necesario -->
+                </tbody>
+            </table>
+        </div>
+    </main>
+</div>
+
+<script src="/js/dashboard.js"></script>
+</body>
+</html>

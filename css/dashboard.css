@@ -21,6 +21,8 @@ body {
     flex-direction: column;
     align-items: center;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    overflow: hidden; /* Evitar el desbordamiento horizontal */
+    box-sizing: border-box; /* Incluir el padding en el cálculo del ancho */
 }
 
 .logo-img {
@@ -36,6 +38,30 @@ body {
     width: 100%;
 }
 
+/* Estilo para enlaces dentro de la barra lateral (para que se vean como botones) */
+.sidebar-menu a {
+    display: block; /* Asegura que los enlaces ocupen toda la anchura */
+    width: 100%;
+    padding: 12px;
+    background-color: #0073e6; /* Azul suave */
+    text-decoration: none; /* Eliminar subrayado del enlace */
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: left;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+    box-sizing: border-box; /* Incluir padding en el cálculo del tamaño */
+}
+
+/* Hover para los enlaces, igual que los botones */
+.sidebar-menu a:hover {
+    background-color: #005bb5; /* Azul más oscuro */
+    transform: translateX(5px); /* Efecto sutil de deslizamiento */
+}
+
+/* Estilo para los botones (sin enlace) */
 .sidebar-btn {
     width: 100%;
     padding: 12px;
@@ -48,6 +74,7 @@ body {
     margin-bottom: 8px;
     border-radius: 5px;
     transition: background-color 0.3s, transform 0.3s;
+    box-sizing: border-box; /* Incluir padding en el cálculo del tamaño */
 }
 
 .sidebar-btn:hover {

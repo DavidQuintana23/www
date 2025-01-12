@@ -1,0 +1,8 @@
+-Todavia no hay base de datos
+-los usuarios no funcionan solo estan de ejemplo
+-usuario y contraseña para entrar "root"
+-Todavia no hay un sistema de verificacion de usuarios y contraseñas solo funciona el usuario root
+-De momento solo intentemos implementar las rondas de cali
+-si vas a modificar estilos dale
+-Todo esta organizado por carpetas los css, js, php y img.
+-Intentemos crear la base de datos primero de los usuarios para el sistema de login porque despues es mas dificil implementarlos
