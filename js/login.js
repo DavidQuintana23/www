@@ -1,6 +1,6 @@
 // Datos de usuario de ejemplo (esto normalmente se haría en el servidor, con base de datos)
-const validUsername = 'usuario123';
-const validPassword = 'contraseña123';
+const validUsername = 'root';
+const validPassword = 'root';
 
 // Obtén el formulario y el mensaje de error
 const form = document.getElementById('loginForm');
